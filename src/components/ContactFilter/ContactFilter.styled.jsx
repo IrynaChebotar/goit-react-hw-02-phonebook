@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
-export const InputStyled = styled.input`
+export const Description = styled.input`
   width: 250px;
   border-radius: 6px;
   outline: none;

@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 import {
   StyledForm,
   StyledField,
-  SubmitBtn,
+  AddBtn,
   StyledError,
 } from './ContactForm.styled';
 
@@ -56,7 +56,7 @@ export class ContactForm extends Component {
             />
             <StyledError name="number" component="div" />
           </div>
-          <SubmitBtn type="submit">Add contact</SubmitBtn>
+          <AddBtn type="submit">Add contact</AddBtn>
         </StyledForm>
       </Formik>
     );

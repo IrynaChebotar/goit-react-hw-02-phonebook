@@ -20,7 +20,7 @@ export const StyledField = styled(Field)`
   box-shadow: 1px 2px 6px 0px rgba(33, 83, 60, 0.5);
 `;
 
-export const SubmitBtn = styled.button`
+export const AddBtn = styled.button`
   margin-top: 60px;
   padding: 4px;
   width: 10%;

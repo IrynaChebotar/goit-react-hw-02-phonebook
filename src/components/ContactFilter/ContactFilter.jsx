@@ -1,10 +1,10 @@
 import React from 'react';
-import { InputStyled, Wrapper } from './ContactFilter.styled';
+import { Description, Wrapper } from './ContactFilter.styled';
 export function ContactFilter({ filter, onChangeFilter }) {
   return (
     <Wrapper>
       <p>Find contacts by name</p>
-      <InputStyled type="text" value={filter} onChange={onChangeFilter} />
+      <Description type="text" value={filter} onChange={onChangeFilter} />
     </Wrapper>
   );
 }
