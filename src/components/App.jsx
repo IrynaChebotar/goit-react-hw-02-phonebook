@@ -5,35 +5,11 @@ import { Contacts } from './Contacts/Contacts';
 import { ContactFilter } from './ContactFilter/ContactFilter';
 import { Title } from './Contacts/Contacts.styled';
 
-const localStorageKey = 'contacts';
-
 export class App extends Component {
   state = {
     contacts: [],
     filter: '',
   };
-
-  deleteAllContacts = () => {
-    this.setState({
-      contacts: [],
-      filter: '',
-    });
-  };
-
-  componentDidMount() {
-    const savedContacts = localStorage.getItem(localStorageKey);
-    if (savedContacts !== null) {
-      this.setState({ contacts: JSON.parse(savedContacts) });
-    }
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    const { contacts: prevContacts } = prevState;
-    const { contacts: newContacts } = this.state;
-    if (newContacts !== prevContacts) {
-      localStorage.setItem(localStorageKey, JSON.stringify(newContacts));
-    }
-  }
 
   handleAddContact = values => {
     const { name, number } = values;
