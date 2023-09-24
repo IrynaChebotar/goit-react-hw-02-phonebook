@@ -66,7 +66,6 @@ export class App extends Component {
         <Contacts
           contacts={filteredContacts}
           onDeleteContact={this.handleDeleteContact}
-          onDeleteAll={this.deleteAllContacts}
         />
       </div>
     );
