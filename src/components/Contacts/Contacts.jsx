@@ -1,13 +1,8 @@
 import React from 'react';
 
-import {
-  ListWrapper,
-  ItemStyle,
-  DeleteBtn,
-  DeleteAllBtn,
-} from './Contacts.styled';
+import { ListWrapper, ItemStyle, DeleteBtn } from './Contacts.styled';
 
-export function Contacts({ contacts, onDeleteContact, onDeleteAll }) {
+export function Contacts({ contacts, onDeleteContact }) {
   return (
     <ListWrapper>
       {contacts.map(contact => (
@@ -18,9 +13,6 @@ export function Contacts({ contacts, onDeleteContact, onDeleteAll }) {
           </DeleteBtn>
         </ItemStyle>
       ))}
-      {contacts.length > 0 && (
-        <DeleteAllBtn onClick={onDeleteAll}>Delete All</DeleteAllBtn>
-      )}
     </ListWrapper>
   );
 }

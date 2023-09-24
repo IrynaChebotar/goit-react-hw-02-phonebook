@@ -31,19 +31,3 @@ export const DeleteBtn = styled.button`
   }
   box-shadow: 0 2px 4px rgba(65, 33, 83, 0.7);
 `;
-
-export const DeleteAllBtn = styled.button`
-  padding: 4px;
-  width: 10%;
-  height: 100%;
-  font-size: 12px;
-  border-radius: 33.5px;
-  background: #a656dc;
-  border: none;
-  &:hover {
-    color: #fff;
-    background-color: #a656dc;
-    box-shadow: 1px 2px 6px 0px rgba(33, 83, 60, 0.7);
-  }
-  box-shadow: 0 2px 4px rgba(33, 83, 60, 0.5);
-`;
